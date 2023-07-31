@@ -1,7 +1,7 @@
-title: Template extension
+title: Comment Analyzer
 version: 0.0.1
 description: This is a template extension
-author: Anonymous
-origin: <Your git repository here>
+author: popenaga
+origin: https://github.com/popenaga/comment-analyzer
 client:
   addToWorkbench: true
