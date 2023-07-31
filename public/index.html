@@ -1,8 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Analyzer</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #tag-cloud {
+            min-height: 200px;
+        }
+    </style>
 </head>
 <body>
-    <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+    <div class="container">
+        <!-- Comment Categorization -->
+        <div class="section" id="comment-categorization">
+            <h2>Comment Categorization</h2>
+            <p>Select a category to filter comments:</p>
+            <select id="category-select">
+                <option value="all">All</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <div id="comments-list"></div>
+        </div>
+
+        <!-- Sentiment Analysis -->
+        <div class="section" id="sentiment-analysis">
+            <h2>Sentiment Analysis</h2>
+            <p>Overall Sentiment: <span id="overall-sentiment"></span></p>
+            <div id="sentiment-chart"></div>
+        </div>
+
+        <!-- Comment Tag Clouds -->
+        <div class="section" id="tag-cloud">
+            <h2>Comment Tag Clouds</h2>
+            <div id="tags"></div>
+        </div>
+    </div>
+
+    <!-- Add your JavaScript here to handle the data visualization -->
+
 </body>
 </html>

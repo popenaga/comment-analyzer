@@ -1,6 +1,6 @@
 title: Comment Analyzer
 version: 0.0.1
-description: This is a template extension
+description: This is a comment analyzer extension.
 author: popenaga
 origin: https://github.com/popenaga/comment-analyzer.git
 client:
